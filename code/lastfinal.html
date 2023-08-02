@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amazon</title>
+  <link rel="stylesheet" type="text/css" href="lastfinal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon"
+    href="https://thumbs.dreamstime.com/b/amazon-logo-white-background-montreal-canada-july-printed-paper-98221126.jpg"
+    type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <div class="logo"></div>
+      </div>
+
+      <div class="nav-address border">
+        <p class="add-first">Hello</p>
+        <div class="add-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="add-second">Select your address</p>
+        </div>
+      </div>
+
+      <div class="nav-search border">
+        <select class="search-select">
+          <option>All</option>
+        </select>
+        <input placeholder="Search Amazon.in" class="search-input">
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+      <div class="nav-signin border">
+        <p class="nav-first">Hello,sign in</p>
+        <p class="nav-second">Account & Lists</p>
+      </div>
+      <div class="nav-singin border">
+        <p class="nav-first">Returns</p>
+        <p class="nav-second">& Orders</p>
+      </div>
+
+      <div class="cart-icon">
+        <button class="open" onclick="showCart()"><i class="fas fa-shopping-cart icon"></i></button>
+       
+        <div class="cart-overlay" id="cart-container" style="display: none;">
+          <div class="cart-items">
+            <div class="cart-header">
+              <h3>Cart Items</h3>
+              <button class="close-icon" onclick="hiddenCart()"><i class="fas fa-times"></i></button>
+            </div>
+            <span class="pname">Product Name</span>
+            <span class="pprice">Price</span>
+            <ul id="cart-list"><ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="panel">
+    <div class="panel-all">
+      <i class="fa-solid fa-bars"></i>All
+    </div>
+    <div class="panel-ops">
+      <p>Amazon miniTv</p>
+      <p>Sell</p>
+      <p>Today's Deals</p>
+      <p>Best Sellers</p>
+      <p>New Release</p>
+      <p>Gift Card's</p>
+      <p>Mobiles</p>
+      <p>Electronics</p>
+      <p>Customer Service</p>
+      <p>Prime</p>
+      <p>Home & Kitchen</p>
+      <p>Computers</p>
+      <p>Amazon Pay</p>
+    </div>
+  </div>
+
+  <div class="hero">
+
+  </div>
+  <div class="shop">
+    <div class="box1 box">
+      <div class="box-content">
+        <h2>Clearence store</h2>
+        <div class="box-img" style="background-image:url('box1.jpg')"></div>
+        <p>See more</p>
+      </div>
+    </div>
+    <div class="box2 box">
+      <div class="box-content">
+        <h2>Top picks for women</h2>
+        <div class="box-img" style="background-image:url('box2.jpg')"></div>
+        <p>See more</p>
+      </div>
+    </div>
+    <div class="box3 box">
+      <div class="box-content">
+        <h2>Beauty picks</h2>
+        <div class="box-img" style="background-image:url('box3.jpg')"></div>
+        <p>See more</p>
+      </div>
+    </div>
+    <div class="box4">
+      <div class="box-content">
+        <h2>Sign in for your best experience</h2>
+        <button>Sign in securely</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- section 2 -->
+  <div class="recent">
+    <br>
+    <div class="sec2">
+      <h2>Related to items you've viewed</h2>
+      <div class="sec2-cards">
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/419oiqASBkL._AC_SY200_.jpg">
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71HOERLKYqL._AC_SY200_.jpg">
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/71uoadMXYJL._AC_SY200_.jpg">
+        </div>
+        <div class="card">
+          <img
+            src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Wearables/PC_CategoryCard_379X304_2._SY304_CB614835787_.jpg">
+        </div>
+        <div class="card">
+          <img src="https://m.media-amazon.com/images/I/51JsqdjgzOL._AC_SY200_.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="details">
+    <br>
+    <div class="product-list">
+      <div class="product-item">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/71eknZxZLmL._AC_UL320_SR320,320_.jpg"
+          alt="Product Image">
+        <h4>Aircase Laptop Bag</h4>
+        <p>₹500</p>
+        <button class="add-to-cart" onclick="addToCart('Aircase Laptop Bag', 500)">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/81GrjcmGyRL._AC_SY200_.jpg" alt="Product Image">
+        <h4>Peanut Butter Crunchy</h4>
+        <p> ₹675</p>
+        <button class="add-to-cart" onclick="addToCart('Peanut Butter Crunchy', 675)">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/71i4HPvo0rL._AC_SY200_.jpg" alt="Product Image">
+        <h4>Airtight Containers</h4>
+        <p>₹1149</p>
+        <button class="add-to-cart" onclick="addToCart('Airtight Containers', 1149)">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="https://m.media-amazon.com/images/I/71tiZCnU9KL._AC_SY200_.jpg" alt="Product Image">
+        <h4>Sandwich Maker</h4>
+        <p>₹1500</p>
+        <button class="add-to-cart" onclick="addToCart('Sandwich Maker', 1500)">Add to Cart</button>
+      </div>
+
+      <div class="product-item">
+        <img src="https://images-eu.ssl-images-amazon.com/images/I/71hmqIQJFdL._AC_UL320_SR320,320_.jpg"
+          alt="Product Image">
+        <h4>HP Pavilion Laptop</h4>
+        <p>₹51765</p>
+        <button class="add-to-cart" onclick="addToCart('HP Pavilion Laptop', 51765)">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="sec4">
+      <p>See personalised recommendations</p>
+      <button>Sign in</button>
+      <p>New customer?<span>Start here</span></p>
+    </div>
+  </div>
+  <footer>
+    <div class="foot">
+      <a href="#">
+        <p>Back to top</p>
+      </a>
+    </div>
+    <div class="foot1">
+      <ul>
+        <p> Get to Know Us</p>
+        <a> About Us</a>
+        <a>Careers</a>
+        <a>Press Releases</a>
+        <a>Amazon Science</a>
+      </ul>
+      <ul>
+        <p> Connect with Us</p>
+        <a>Facebook </a>
+        <a>Twitter</a>
+        <a>Instagram</a>
+      </ul>
+      <ul>
+        <p>Make Money with Us</p>
+        <a> Sell on Amazon</a>
+        <a> Sell under Amazon Accelerator</a>
+        <a> Protect and Build Your Brand</a>
+        <a> Amazon Global Selling</a>
+        <a> Become an Affiliate</a>
+        <a> Fulfilment by Amazon</a>
+        <a> Advertise Your Products</a>
+        <a>Amazon Pay on Merchants</a>
+      </ul>
+      <ul>
+        <p>Let Us Help You</p>
+        <a> COVID-19 and Amazon</a>
+        <a> Your Account</a>
+        <a> Returns Centre
+          <a> 100% Purchase Protection</a>
+          <a> Amazon App Download</a>
+          <a> Help</a>
+      </ul>
+    </div>
+
+    <div class="foot2">
+      <div class="logo"></div>
+    </div>
+
+    <div class="foot-copy">
+      <div class="pages">
+        <a>Conditions of Use & Sale</a>
+        <a>Privacy policy</a>
+        <a>Your Ads Privacy Choices</a>
+      </div>
+      <div class="copyright">
+        <p>&copy;1996-2023, Amazon.com, Inc. or its affiliates</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="lastfinal.js"></script>
+</body>
+
+</html>
